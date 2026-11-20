@@ -1,6 +1,6 @@
 {
  "schemaVersion": 3,
- "generatedAt": "2026-11-20T18:15:00Z",
+ "generatedAt": "2026-11-20T18:26:00Z",
  "asOf": "2025-12-31",
  "disclaimer": "Simulated POC figure. Not actual Vedanta or Hindustan Zinc performance and not a claim of realised savings.",
  "backcastIncluded": true,
@@ -114,12 +114,523 @@
    "Backtest WAPE is 1.172 (1 or more): the model is no better than predicting zero on held-out months.",
    "Backtest predicted total 158402 vs actual total 305802 (ratio 0.52): the model under-predicts volume.",
    "Horizon is 11, not 12: 36 months of history (2023-01 to 2025-12) cannot support a 12-month holdout plus the 25 observations the trainer needs.",
-   "generalization.verdict was not read back in this run."
+   "generalization.verdict could not be read back: the get_experiment response was truncated before that block."
   ],
   "forecastAssetId": "6b0089143b3f4b47b7dcd1b1",
   "forecastFrom": "2026-01",
   "forecastTo": "2026-11",
-  "outputs": null,
-  "outputsNote": "Not recorded: the gs:// URIs (forecast-001..037, backtest-001..030, metrics.json) were not available in this run. The GCS bucket name is unknown to this seat, gcp_read_object needs one, and the create_forecast response that lists them was not re-read. metrics.json was NOT compared with forecast.json."
+  "outputs": [
+   {
+    "file": "forecast-001.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-001.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-001.csv",
+    "rows": null
+   },
+   {
+    "file": "forecast-002.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-002.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-002.csv",
+    "rows": null
+   },
+   {
+    "file": "forecast-003.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-003.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-003.csv",
+    "rows": null
+   },
+   {
+    "file": "forecast-004.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-004.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-004.csv",
+    "rows": null
+   },
+   {
+    "file": "forecast-005.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-005.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-005.csv",
+    "rows": null
+   },
+   {
+    "file": "forecast-006.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-006.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-006.csv",
+    "rows": null
+   },
+   {
+    "file": "forecast-007.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-007.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-007.csv",
+    "rows": null
+   },
+   {
+    "file": "forecast-008.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-008.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-008.csv",
+    "rows": null
+   },
+   {
+    "file": "forecast-009.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-009.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-009.csv",
+    "rows": null
+   },
+   {
+    "file": "forecast-010.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-010.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-010.csv",
+    "rows": null
+   },
+   {
+    "file": "forecast-011.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-011.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-011.csv",
+    "rows": null
+   },
+   {
+    "file": "forecast-012.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-012.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-012.csv",
+    "rows": null
+   },
+   {
+    "file": "forecast-013.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-013.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-013.csv",
+    "rows": null
+   },
+   {
+    "file": "forecast-014.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-014.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-014.csv",
+    "rows": null
+   },
+   {
+    "file": "forecast-015.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-015.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-015.csv",
+    "rows": null
+   },
+   {
+    "file": "forecast-016.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-016.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-016.csv",
+    "rows": null
+   },
+   {
+    "file": "forecast-017.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-017.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-017.csv",
+    "rows": null
+   },
+   {
+    "file": "forecast-018.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-018.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-018.csv",
+    "rows": null
+   },
+   {
+    "file": "forecast-019.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-019.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-019.csv",
+    "rows": null
+   },
+   {
+    "file": "forecast-020.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-020.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-020.csv",
+    "rows": null
+   },
+   {
+    "file": "forecast-021.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-021.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-021.csv",
+    "rows": null
+   },
+   {
+    "file": "forecast-022.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-022.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-022.csv",
+    "rows": null
+   },
+   {
+    "file": "forecast-023.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-023.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-023.csv",
+    "rows": null
+   },
+   {
+    "file": "forecast-024.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-024.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-024.csv",
+    "rows": null
+   },
+   {
+    "file": "forecast-025.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-025.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-025.csv",
+    "rows": null
+   },
+   {
+    "file": "forecast-026.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-026.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-026.csv",
+    "rows": null
+   },
+   {
+    "file": "forecast-027.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-027.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-027.csv",
+    "rows": null
+   },
+   {
+    "file": "forecast-028.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-028.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-028.csv",
+    "rows": null
+   },
+   {
+    "file": "forecast-029.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-029.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-029.csv",
+    "rows": null
+   },
+   {
+    "file": "forecast-030.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-030.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-030.csv",
+    "rows": null
+   },
+   {
+    "file": "forecast-031.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-031.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-031.csv",
+    "rows": null
+   },
+   {
+    "file": "forecast-032.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-032.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-032.csv",
+    "rows": null
+   },
+   {
+    "file": "forecast-033.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-033.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-033.csv",
+    "rows": null
+   },
+   {
+    "file": "forecast-034.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-034.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-034.csv",
+    "rows": null
+   },
+   {
+    "file": "forecast-035.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-035.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-035.csv",
+    "rows": null
+   },
+   {
+    "file": "forecast-036.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-036.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-036.csv",
+    "rows": null
+   },
+   {
+    "file": "forecast-037.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-037.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/forecast-037.csv",
+    "rows": null
+   },
+   {
+    "file": "backtest-001.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-001.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-001.csv",
+    "rows": null
+   },
+   {
+    "file": "backtest-002.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-002.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-002.csv",
+    "rows": null
+   },
+   {
+    "file": "backtest-003.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-003.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-003.csv",
+    "rows": null
+   },
+   {
+    "file": "backtest-004.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-004.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-004.csv",
+    "rows": null
+   },
+   {
+    "file": "backtest-005.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-005.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-005.csv",
+    "rows": null
+   },
+   {
+    "file": "backtest-006.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-006.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-006.csv",
+    "rows": null
+   },
+   {
+    "file": "backtest-007.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-007.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-007.csv",
+    "rows": null
+   },
+   {
+    "file": "backtest-008.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-008.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-008.csv",
+    "rows": null
+   },
+   {
+    "file": "backtest-009.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-009.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-009.csv",
+    "rows": null
+   },
+   {
+    "file": "backtest-010.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-010.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-010.csv",
+    "rows": null
+   },
+   {
+    "file": "backtest-011.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-011.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-011.csv",
+    "rows": null
+   },
+   {
+    "file": "backtest-012.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-012.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-012.csv",
+    "rows": null
+   },
+   {
+    "file": "backtest-013.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-013.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-013.csv",
+    "rows": null
+   },
+   {
+    "file": "backtest-014.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-014.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-014.csv",
+    "rows": null
+   },
+   {
+    "file": "backtest-015.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-015.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-015.csv",
+    "rows": null
+   },
+   {
+    "file": "backtest-016.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-016.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-016.csv",
+    "rows": null
+   },
+   {
+    "file": "backtest-017.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-017.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-017.csv",
+    "rows": null
+   },
+   {
+    "file": "backtest-018.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-018.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-018.csv",
+    "rows": null
+   },
+   {
+    "file": "backtest-019.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-019.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-019.csv",
+    "rows": null
+   },
+   {
+    "file": "backtest-020.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-020.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-020.csv",
+    "rows": null
+   },
+   {
+    "file": "backtest-021.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-021.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-021.csv",
+    "rows": null
+   },
+   {
+    "file": "backtest-022.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-022.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-022.csv",
+    "rows": null
+   },
+   {
+    "file": "backtest-023.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-023.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-023.csv",
+    "rows": null
+   },
+   {
+    "file": "backtest-024.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-024.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-024.csv",
+    "rows": null
+   },
+   {
+    "file": "backtest-025.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-025.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-025.csv",
+    "rows": null
+   },
+   {
+    "file": "backtest-026.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-026.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-026.csv",
+    "rows": null
+   },
+   {
+    "file": "backtest-027.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-027.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-027.csv",
+    "rows": null
+   },
+   {
+    "file": "backtest-028.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-028.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-028.csv",
+    "rows": null
+   },
+   {
+    "file": "backtest-029.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-029.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-029.csv",
+    "rows": null
+   },
+   {
+    "file": "backtest-030.csv",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-030.csv",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/backtest-030.csv",
+    "rows": null
+   },
+   {
+    "file": "metrics.json",
+    "uri": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/metrics.json",
+    "bucket": "contextflow_predictions_forecast",
+    "name": "predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/metrics.json",
+    "rows": null
+   }
+  ],
+  "outputsRows": {
+   "forecastTotalFromResponse": 65560,
+   "perFile": "not known: the response gives only the total rows; the bulk CSVs were not read, as directed",
+   "metricsJson": "metrics.json forecastRows = 65560"
+  },
+  "outputsSource": "POST /automl/experiments/6b0088153b3f4b47b7dcd1a8/forecast re-called 2026-11-20T18:25Z; response assetId 6b00909f3b3f4b47b7dcd1e0 (a new asset: the endpoint did not return 6b0089143b3f4b47b7dcd1b1), rows 65560, predictionLength 11, 68 outputs (37 forecast, 30 backtest, metrics.json). forecast.json still points at forecastAssetId 6b0089143b3f4b47b7dcd1b1.",
+  "metricsCheck": {
+   "checkedAt": "2026-11-20T18:25:36Z",
+   "object": "gs://contextflow_predictions_forecast/predictions/6ae9bb7a19423a530ab7a092/6b0088153b3f4b47b7dcd1a8/metrics.json",
+   "metricsExperimentId": "6b0088153b3f4b47b7dcd1a8",
+   "forecastJsonExperimentId": "6b0088153b3f4b47b7dcd1a8",
+   "experimentIdMatches": true,
+   "metricsHorizon": 11,
+   "forecastJsonPredictionLength": 11,
+   "horizonMatches": true,
+   "metricsForecastRows": 65560,
+   "forecastJsonRows": 65560,
+   "rowsMatch": true,
+   "metricsAssetId": "6b0085ea8f3d5c97414146f3 (training-set asset)",
+   "metricsGeneratedAt": "2026-11-20 18:25:20.948169+00:00",
+   "backtestMae": {
+    "metricsJson": 5.476878,
+    "manifest": 5.477
+   },
+   "backtestWape": {
+    "metricsJson": 1.172162,
+    "manifest": 1.172
+   },
+   "backtestRmse": 44.989866,
+   "leaderboardBestRmse": 11.924287,
+   "note": "The leaderboard RMSE (11.924) is the validation score; metrics.json rmse (44.99) is the backtest RMSE over the held-out 11 months. They differ by design.",
+   "generalizationVerdict": null,
+   "generalizationNote": "Not read back: get_experiment returns ~233K chars and was truncated before the generalization block; the verdict is unknown.",
+   "result": "pass"
+  }
  }
 }
